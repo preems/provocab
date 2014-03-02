@@ -1,127 +1,106 @@
-<style type="text/css">
 
-.element.text.medium
-{
-border-color:white;
-}
-
-.element.text.medium:hover , .element.text.medium:focus
-{
-border-color:black;
-}
-
-.element.textarea.small
-{
-border-color:white;
-}
-
-.element.textarea.small:hover , .element.textarea.small:focus
-{
-border-color:black;
-}
-</style>
+<div class="span9">
 <div id="form_container">
 <form id="wordupdateform" class="updateform"  method="post" action="">
-<table>	
-		<tr><td>
-			<label class="formlabel" for="element_1">Word </label>
-		</td><td>
-			<div class="input-control text span4"><input id="word" name="word" class="element text medium" type="text" maxlength="255" value="<?php echo $word ?>"/></div>
+			<legend>Update Word</legend>		
+			<label class="" >Word </label>
+
+			<div class="input-control text span9 " data-role="input-control"><input id="word" name="word" class="" type="text" maxlength="255" value="<?php echo $word ?>"/></div>
+
+		
+
+			<label class="">Meaning </label>
+
+			<div class="input-control textarea span9" data-role="input-control"><textarea id="meaning" name="meaning" class=""><?php echo $meaning ?></textarea> </div>
+
+		
+
+			<label>Simple meaning </label>
+
+			<div class="input-control text span9 "><input id="simplemeaning" name="simplemeaning" type="text" maxlength="255" value="<?php echo $simplemeaning ?>"/></div>
+
 			
-		</td></tr>
-		
-		<tr><td>
-			<label class="formlabel" for="element_2">Meaning </label>
-		</td><td>
-			<div class="input-control textarea span6"><textarea id="meaning" name="meaning" class="element textarea small"><?php echo $meaning ?></textarea> </div>
 			
-		</td></tr>
-		
-		<tr><td>
-			<label class="formlabel" for="element_2">Simple Meaning </label>
-		</td><td>
-			<div class="input-control text span4"><input id="simplemeaning" name="simplemeaning" class="element text medium" type="text" maxlength="255" value="<?php echo $simplemeaning ?>"/></div>
 			
-			</td></tr>
+			<label >Synonyms </label>
 		
-		<tr><td>
-			<label class="formlabel" for="element_3">Pronounciation </label>
-		</td><td>
-			<div class="input-control text span4"><input id="pronounciation" name="pronounciation" class="element text medium" type="text" maxlength="255" value="<?php echo $pronounciation ?>"/> </div>
-		</td></tr>
+			<div class="input-control text span9 "><input id="synonyms" name="synonyms"  type="text" maxlength="255" value="<?php echo $synonyms ?>"/> </div>
 		
-		<tr><td>
-			<label class="formlabel" for="element_4">Usage </label>
-		</td><td>
-			<div class="input-control textarea span6"><textarea id="usage" name="usage" class="element textarea small"><?php echo $usage ?></textarea> </div>
+			<div class="row">
 
-		</td></tr>
+			<div class="span5">
 
+			<label  >Pronounciation </label>
 		
-		<tr><td>
-			<label class="formlabel" for="element_5">Date </label>
-		</td><td>
-			<!--<div class="input-control text span4"><input id="date" name="date" class="element text medium" type="text" maxlength="255" value="<?php echo $date ?>"/> </div>-->
-			<?php echo $date ?>
-
-		</td></tr>
-		
-		<tr><td>
-			<label class="formlabel" for="element_6">Notes </label>
-		</td><td>
-			<div class="input-control text span4"><input id="notes" name="notes" class="element text medium" type="text" maxlength="255" value="<?php echo $notes ?>"/> </div>
-
-		</td></tr>
+			<div class="input-control text "><input id="pronounciation" name="pronounciation" type="text" maxlength="255" value="<?php echo $pronounciation ?>"/> </div>
 		
 		
-		<tr><td>
-			<label class="formlabel" for="element_7">Source </label>
-		</td><td>
-			<div class="input-control text span4"><input id="source" name="source" class="element text medium" type="text" maxlength="255" value="<?php echo $source ?>"/> </div>
-		</td></tr>
 		
+			<label  >Usage </label>
 		
-		<tr><td>
-			<label class="formlabel" for="element_8">Tags </label>
-		</td><td>
-			<div class="input-control text span4"><input id="tags" name="tags" class="element text medium" type="text" maxlength="255" value="<?php echo $tags ?>"/> </div>
-		</td></tr>
+			<div class="input-control textarea "><textarea id="usage" name="usage" ><?php echo $usage ?></textarea> </div>
+		
 
 		
-		<tr><td>
-			<label class="formlabel" for="element_9">Synonyms </label>
-		</td><td>
-			<div class="input-control text span4"><input id="synonyms" name="synonyms" class="element text medium" type="text" maxlength="255" value="<?php echo $synonyms ?>"/> </div>
-		</td></tr>
 		
-		<tr><td>
-			<label class="formlabel" for="element_9">Antonyms </label>
-		</td><td>
-			<div class="input-control text span4"><input id="antonyms" name="antonyms" class="element text medium" type="text" maxlength="255" value="<?php echo $antonyms ?>"/> </div>
-		</td></tr>
+			<label >Date </label>
+		
+			<!--<div class="input-control text " data-role="datepicker" data-format="yyyy-m-d" data-position="top" data-effect='slide'><input class="element text medium hasDatepicker"  id="date" name="date"  type="text" maxlength="255" value="<?php echo $date ?>"/> </div>
+		        -->
+			<p><?php echo $date ?></p>
+		
+		
+			<label  >Notes </label>
+		
+			<div class="input-control text "><input id="notes" name="notes"  type="text" maxlength="255" value="<?php echo $notes ?>"/> </div>
+		
+		
+			</div>
+			<div class="span4">
+		
+			<label >Source </label>
+		
+			<div class="input-control text "><input id="source" name="source" type="text" maxlength="255" value="<?php echo $source ?>"/> </div>
+		
+		
+		
+		
+			<label >Tags </label>
+		
+			<div class="input-control text "><input id="tags" name="tags" type="text" maxlength="255" value="<?php echo $tags ?>"/> </div>
+		
 
 		
-		<tr><td>
-			<label class="formlabel" for="element_10">Realted Word forms </label>
-		</td><td>
-			<div class="input-control text span4"><input id="relatedwordforms" name="relatedwordforms" class="element text medium" type="text" maxlength="255" value="<?php echo $relatedwordforms ?>"/> </div>	
-		</td></tr>
-		
-		
-		<tr><td>
-			<label class="formlabel" for="element_11">Wordlist ? </label>
-		</td><td>
-			<!--<span> <label class="input-control checkbox"><input id="wordlist" name="wordlist" class="element checkbox" type="checkbox" value="1" />
-			 <span class="helper">Yes</span></span> -->
-			 <p  class="body-secondary-text"><?php if($wordlist==1) echo "Yes"; else echo "No"; ?></p>
-		</td></tr>
 		
 		
 		
-		<tr><td>
-		</td><td>			
-			<input id="saveForm" class="button_text" type="submit" name="" value="Update" />
-		</td></tr>
-		<table>
-	</form>	
+			<label >Antonyms </label>
+		
+			<div class="input-control text "><input id="antonyms" name="antonyms" type="text" maxlength="255" value="<?php echo $antonyms ?>"/> </div>
+		
+
+		
+		
+			<label >Related Word forms </label>
+		
+			<div class="input-control text "><input id="relatedwordforms" name="relatedwordforms" class=" " type="text" maxlength="255" value="<?php echo $relatedwordforms ?>"/> </div>
+		
+		
+		
+			<!--
+			<label >Wordlist ? </label>
+		
+
+			<span> <label class="input-control checkbox"><input id="wordlist" name="wordlist" class="element checkbox" type="checkbox" value="1" checked="checked" />
+			 <span class="helper">Yes</span></span> 
+		    -->
+		
+		
+			</div>
+			</div>
+		
+					
+			<input id="saveForm" class="button_text bg-color-blue" type="submit" name="" value="Update" />
+
+		</form>	
 </div>

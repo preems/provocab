@@ -4,10 +4,10 @@
 <button class="btn-search"></button>
 </div>
 
-<div class="span4 offset4" style="margin-top:20px; height:30px">
- <input class="bg-color-blue default searchbtn" type="button" value="Search"/>
-  <input  class="bg-color-blue default searchlucky" type="button" value="I am feeling lucky"/>
+<div class="span5 offset7" style="margin-top:20px; height:30px; margin-bottom:20px">
+ <input class=" searchbtn" type="button" value="Search"/>
+ 
 </div>
 
-<div class="span12 searchresults">
+<div class="searchresults">
 </div>

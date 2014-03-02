@@ -17,7 +17,7 @@ padding:5px 10px;
 }
 
 </style>
-<table id="cal" style="padding:0px"><tr>
+<table id="caltiles" style="padding:0px"><tr>
 <?php
 
 $daycount =1;
@@ -38,11 +38,11 @@ while($daycount<=$totalday)
 
 echo '<td> 
 <a href='.'"'.$dayurl.'/'.$year.'/'.$month.'/'.$daycount.'"'.' >
-<div class="tile bg-color-blue">
+<div class="tile">
 
-<div class=" caltile tile-content ">';
+<div class="tile-content ">';
 
-$query = $this->db->get_where('words',array('date'=>$year.'-'.$month.'-'.$daycount));
+$query = $this->db->get_where('words',array('date'=>$year.'-'.$month.'-'.$daycount,'uid'=>$this->facebook->getUser()));
 $result=$query->result();
 foreach($result as $word)
 {

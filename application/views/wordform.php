@@ -1,110 +1,109 @@
-<?php if($_POST): ?>     
-	 <div class="notices">
-    <div class="bg-color-blue">
-    <a href="#" class="close"></a>
-<div class="notice-icon"> <i class="icon-checkmark"></i> </div>
-    <!--<div class="notice-image"> <img/> </div> -->
-    <div class="notice-header"> <?php echo $_POST['word'] ?> Added </div>
-   <!-- <div class="notice-text"> ... </div> -->
-    </div>
-    </div>
-<?php endif; ?>
 
+<div class="span8">
 <div id="form_container">
 <form id="wordinsertform" class="insertform"  method="post" action="">
-								
-		<table>	
-		<tr><td>
-			<label class="formlabel" for="element_1">Word </label>
-		</td><td>
-			<div class="input-control text span4"><input id="word" name="word" class="element text medium" type="text" maxlength="255" value=""/></div>
-		</td></tr>
-		
-		<tr><td>
-			<label class="formlabel" for="element_2">Meaning </label>
-		</td><td>
-			<div class="input-control textarea span6"><textarea id="meaning" name="meaning" class="element textarea small"></textarea> </div>
-		</td></tr>
-		
-		<tr><td>
-			<label class="formlabel" for="element_1">Simple meaning </label>
-		</td><td>
-			<div class="input-control text span4"><input id="simplemeaning" name="simplemeaning" class="element text medium" type="text" maxlength="255" value=""/></div>
-		</td></tr>
-		
-		<tr><td>
-			<label class="formlabel" for="element_3">Pronounciation </label>
-		</td><td>
-			<div class="input-control text span4"><input id="pronounciation" name="pronounciation" class="element text medium" type="text" maxlength="255" value=""/> </div>
-		</td></tr>
-		
-		<tr><td>
-			<label class="formlabel" for="element_4">Usage </label>
-		</td><td>
-			<div class="input-control textarea span6"><textarea id="usage" name="usage" class="element textarea small"></textarea> </div>
-		</td></tr>
+			<legend>Add new Word</legend>
+
+			<label class="" >Word </label>
+
+			<div class="input-control text span8 " data-role="input-control"><input id="word" name="word" class="" type="text" maxlength="255" value=""/></div>
 
 		
-		<tr><td>
-			<label class="formlabel" for="element_5">Date </label>
-		</td><td>
-			<div class="input-control text span4"><input id="date" name="date" class="element text medium" type="text" maxlength="255" value=""/> </div>
-		</td></tr>
-		
-		<tr><td>
-			<label class="formlabel" for="element_6">Notes </label>
-		</td><td>
-			<div class="input-control text span4"><input id="notes" name="notes" class="element text medium" type="text" maxlength="255" value=""/> </div>
-		</td></tr>
-		
-		
-		<tr><td>
-			<label class="formlabel" for="element_7">Source </label>
-		</td><td>
-			<div class="input-control text span4"><input id="source" name="source" class="element text medium" type="text" maxlength="255" value="B800"/> </div>
-		</td></tr>
-		
-		
-		<tr><td>
-			<label class="formlabel" for="element_8">Tags </label>
-		</td><td>
-			<div class="input-control text span4"><input id="tags" name="tags" class="element text large" type="text" maxlength="255" value="b800"/> </div>
-		</td></tr>
+
+			<label class="">Meaning </label>
+
+			<div class="input-control textarea span8" data-role="input-control"><textarea id="meaning" name="meaning" class=""></textarea> </div>
 
 		
-		<tr><td>
-			<label class="formlabel" for="element_9">Synonyms </label>
-		</td><td>
-			<div class="input-control text span4"><input id="synonyms" name="synonyms" class="element text large" type="text" maxlength="255" value=""/> </div>
-		</td></tr>
+
+			<label>Simple meaning </label>
+
+			<div class="input-control text span8 "><input id="simplemeaning" name="simplemeaning" type="text" maxlength="255" value=""/></div>
+
+			
+			<label >Synonyms </label>
 		
-		<tr><td>
-			<label class="formlabel" for="element_9">Antonyms </label>
-		</td><td>
-			<div class="input-control text span4"><input id="antonyms" name="antonyms" class="element text large" type="text" maxlength="255" value=""/> </div>
-		</td></tr>
+			<div class="input-control text span8 "><input id="synonyms" name="synonyms"  type="text" maxlength="255" value=""/> </div>
+		
+			<div class="row">
+
+			<div class="span4">
+
+			<label  >Pronounciation </label>
+		
+			<div class="input-control text "><input id="pronounciation" name="pronounciation" type="text" maxlength="255" value=""/> </div>
+		
+		
+		
+			<label  >Usage </label>
+		
+			<div class="input-control textarea "><textarea id="usage" name="usage" ></textarea> </div>
+		
 
 		
-		<tr><td>
-			<label class="formlabel" for="element_10">Realted Word forms </label>
-		</td><td>
-			<div class="input-control text span4"><input id="relatedwordforms" name="relatedwordforms" class="element text large" type="text" maxlength="255" value=""/> </div>
-		</td></tr>
+		
+			<label >Date </label>
+		
+			<div class="input-control text " data-role="datepicker" data-format="yyyy-m-d" data-position="top" data-effect='slide'><input class="element text medium hasDatepicker"  id="date" name="date"  type="text" maxlength="255" value=""/> </div>
 		
 		
-		<tr><td>
-			<label class="formlabel" for="element_11">Wordlist ? </label>
-		</td><td>
+		
+			<label  >Notes </label>
+		
+			<div class="input-control text "><input id="notes" name="notes"  type="text" maxlength="255" value=""/> </div>
+		
+		
+			</div>
+			<div class="span4">
+		
+			<label >Source </label>
+		
+			<div class="input-control text "><input id="source" name="source" type="text" maxlength="255" value=""/> </div>
+		
+		
+		
+		
+			<label >Tags </label>
+		
+			<div class="input-control text "><input id="tags" name="tags" type="text" maxlength="255" value=""/> </div>
+		
+
+		
+		
+		
+		
+			<label >Antonyms </label>
+		
+			<div class="input-control text "><input id="antonyms" name="antonyms" type="text" maxlength="255" value=""/> </div>
+		
+
+		
+		
+			<label >Related Word forms </label>
+		
+			<div class="input-control text "><input id="relatedwordforms" name="relatedwordforms" class=" " type="text" maxlength="255" value=""/> </div>
+		
+		
+		
+			<!--
+			<label >Wordlist ? </label>
+		
+
 			<span> <label class="input-control checkbox"><input id="wordlist" name="wordlist" class="element checkbox" type="checkbox" value="1" checked="checked" />
 			 <span class="helper">Yes</span></span> 
-		</td></tr>
+		    -->
 		
 		
+			</div>
+			</div>
 		
-		<tr><td>
-		</td><td>			
+					
 			<input id="saveForm" class="button_text bg-color-blue" type="submit" name="" value="Submit" />
-		</td></tr>
-		<table>
+
 		</form>	
+</div>
+</div>
+<div class="span4" id="suggestionsdiv" style="margin-top:30px;display:none">
+<h6>Meaning suggestions</h6>
+<ul id="suggestionslist"></ul>
 </div>

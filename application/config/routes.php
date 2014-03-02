@@ -40,6 +40,7 @@
 
 $route['default_controller'] = "word";
 $route['404_override'] = '';
+$route['settings'] = 'word/settings';
 
 
 /* End of file routes.php */
