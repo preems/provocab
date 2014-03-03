@@ -44,6 +44,8 @@
 			<p><span style="font-family:verdana,geneva,sans-serif">Mark word <strong>Rememberred</strong> when u recall it</span></p>
 
 			<p><span style="font-family:verdana,geneva,sans-serif">Mark word <strong>Forgot</strong> when u cant recall it</span></p>
+			
+			<p><span style="font-family:verdana,geneva,sans-serif">Press <strong>A</strong> to hide meanings in cards and <strong>S</strong> to bring it back</span></p>
 
 			<p><span style="font-family:verdana,geneva,sans-serif">ProVocab will make intelligent suggestions based on your inputs</span></p>
 
