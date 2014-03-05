@@ -40,7 +40,8 @@ class Auth
 							  'uid'=>$CI->facebook->getUser(),
 							  'username'=>$response['username'],
 							  'fullname'=>$response['name'],
-							  'email'=>$response['email']
+							  'email'=>$response['email'],
+							  'fb_response_dump'=>json_encode($response)
 		));
 
 		//Send Getting Started Mail to the New User

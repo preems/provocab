@@ -15,7 +15,7 @@ Deleted {count4} words(s).</span></p>
 <a href="http://provocab.com/word/insert">http://provocab.com/word/insert</a></span></p>
 
 <p><span style="font-family:verdana,geneva,sans-serif">Check out your Feb&#39;s learning calender<br />
-<a href="http://provocab.com/word/calender/2014/2">http://provocab.com/word/calender/2014/1</a></span></p>
+<a href="http://provocab.com/word/calender/2014/2">http://provocab.com/word/calender/2014/2</a></span></p>
 
 <p><span style="font-family:verdana,geneva,sans-serif">Read How to Use Pro vocab<br />
 <a href="http://provocab.com/word/howtouse">http://provocab.com/word/howtouse</a></span></p>
